@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
+    "build": "webpack --mode production",
     "dev": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

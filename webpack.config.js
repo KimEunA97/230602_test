@@ -13,7 +13,7 @@ module.exports = {
     index: "./hello.tsx",
   },
   output: { // 출력
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "build"),
     //출력할 파일 이름
     filename: "app.js",
   },
