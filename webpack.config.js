@@ -1,15 +1,21 @@
-const path = require("path"); 
+const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   name: "wordrelay-setting",
-  mode: "development", 
+  mode: "development",
   devtool: "eval",
   resolve: {
     extensions: [".js", ".jsx"],
   },
 
   entry: { // 입력
-    app: "./hello.tsx",
+    index: "./hello.tsx",
+  },
+  output: { // 출력
+    path: path.join(__dirname, "dist"),
+    //출력할 파일 이름
+    filename: "app.js",
   },
 
   module: {
@@ -25,9 +31,5 @@ module.exports = {
     ],
   },
 
-  output: { // 출력
-    path: path.join(__dirname, "dist"), 
-    //출력할 파일 이름
-    filename: "app.js",
-  },
+
 };
