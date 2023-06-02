@@ -10,10 +10,10 @@ module.exports = {
   },
 
   entry: { // 입력
-    index: "./hello.tsx",
+    index: "./build/hello.tsx",
   },
   output: { // 출력
-    path: path.join(__dirname, "build"),
+    path: path.join(__dirname, "dist"),
     //출력할 파일 이름
     filename: "app.js",
   },
